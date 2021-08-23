@@ -10,13 +10,16 @@ public class Ex5_3 {
         int min = score[0];
 
         for(int i=0;i<score.length;i++){
-            if(max<score[i])
-                max= score[i];
-            if(min>score[i])
+            if(score[i]>max){
+                max = score[i];
+            }
+            else if(score[i]<min){
                 min = score[i];
+            }
         }
 
-        System.out.println("최대값: "+max);
-        System.out.println("최소값: "+min);
+
+        System.out.println(max);
+        System.out.println(min);
     }
 }

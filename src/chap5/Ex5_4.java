@@ -10,7 +10,8 @@ public class Ex5_4 {
 
         for(int i=0;i<100;i++){
             int n = (int)(Math.random()*10);
-            int tmp = numArr[0];
+            int tmp;
+            tmp = numArr[0];
             numArr[0] = numArr[n];
             numArr[n] = tmp;
         }
